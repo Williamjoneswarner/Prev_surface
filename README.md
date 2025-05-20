@@ -22,3 +22,7 @@ Promotes reproducibility through transparent and adaptable code using standard t
 The analysis is based on simplified simulated data to clarify methodological steps. However, this synthetic structure lacks the complexity typically found in real-world epidemiological datasets.
 
 Users applying these methods to empirical data—particularly datasets with meaningful spatial autocorrelation—can expect more robust and informative model outputs. The model’s capacity to capture spatial structure is constrained by the simplicity of the dummy data, and real data will likely yield more realistic and insightful spatial predictions.
+
+**NOTE ON DATA**
+
+I have created simulated data for this work through. ideally for the final linear.model.MLE() model (line 439) the input variables (partial sill, range) are taken from the variogram completed upon the residuals of the glm() on line 391-401 which. i beleive this error is due to the simplicity of my simulated spatial data and not something one is likely to encounter in real world datasets. However i am still trying to sort it and create a simulated dataset that will allow this analysis. I insteasd use a partial sill and range that allowed the final model to work and used to produce a surface later. one will need to amend these accordingly to work in other analysis. 
